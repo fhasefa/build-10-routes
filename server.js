@@ -45,15 +45,16 @@ app.get('/10', (req, res) => {
     res.send('<h1>Page 10 :)!!</h1>')
 })
 
+app.get('/queryroute', (req, res) => {
+    console.log(req.query.random)
+    res.send(`<h1>${req.query.random} anything</h1>`)
+})
+
 app.get('/:name', (req, res) => {
     console.log(req.params)
     res.send(`<h1>Hello ${req.params.name}</h1>`)
 })
 
-app.get('/:anything', (req, res) => {
-    console.log(req.query.random)
-    res.send(`<h1>${req.query.random}</h1>`)
-})
 
 app.get('/:name/:last', (req, res) => {
     console.log(req.params)
