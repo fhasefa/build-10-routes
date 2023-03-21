@@ -7,7 +7,7 @@ const router = express.Router()
 const blogController = require('../controllers/blogController')
 
 // Setup an "index" route for fruits, attach it to router along with the controller logic
-router.get('/', blogController.index)
+router.get('/', blogController.show)
 
 
 module.exports = router

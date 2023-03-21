@@ -1,4 +1,4 @@
-function index(req, res) {
-    res.render('blog/Index')
+function show(req, res) {
+    res.render('blog/show')
 }
-module.exports = { index }
+module.exports = { show }
